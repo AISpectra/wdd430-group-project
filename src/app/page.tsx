@@ -1,4 +1,5 @@
-import Navigation from "@/components/Navigation";
+import Navigation from "../components/Navigation";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
@@ -31,26 +32,20 @@ export default function Home() {
           </p>
 
           <div className="grid">
-            <article className="card">
-              <h3>Reusable Components</h3>
-              <p className="muted">
-                Navigation, cards, layout, and shared UI patterns.
-              </p>
-            </article>
+            <Card
+              title="Reusable Components"
+              description="Navigation, cards, layout, and shared UI patterns."
+            />
 
-            <article className="card">
-              <h3>Pages</h3>
-              <p className="muted">
-                Home and About pages built with the App Router structure.
-              </p>
-            </article>
+            <Card
+              title="Pages"
+              description="Home and About pages built with the App Router structure."
+            />
 
-            <article className="card">
-              <h3>Responsive Layout</h3>
-              <p className="muted">
-                Baseline responsiveness and readable spacing for mobile/desktop.
-              </p>
-            </article>
+            <Card
+              title="Responsive Layout"
+              description="Baseline responsiveness and readable spacing for mobile/desktop."
+            />
           </div>
         </section>
       </main>
