@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Reusable Components",
+    "description": "Navigation, cards, layout, and shared UI patterns."
+  },
+  {
+    "title": "Pages",
+    "description": "Home and About pages built with the App Router structure."
+  },
+  {
+    "title": "Responsive Layout",
+    "description": "Baseline responsiveness and readable spacing for mobile/desktop."
+  }
+]

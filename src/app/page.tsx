@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation";
 import Card from "../components/Card";
+import features from "../data/features.json";
 
 export default function Home() {
   return (
@@ -32,20 +33,13 @@ export default function Home() {
           </p>
 
           <div className="grid">
-            <Card
-              title="Reusable Components"
-              description="Navigation, cards, layout, and shared UI patterns."
-            />
-
-            <Card
-              title="Pages"
-              description="Home and About pages built with the App Router structure."
-            />
-
-            <Card
-              title="Responsive Layout"
-              description="Baseline responsiveness and readable spacing for mobile/desktop."
-            />
+            {features.map((feature, index) => (
+              <Card
+                key={index}
+                title={feature.title}
+                description={feature.description}
+              />
+            ))}
           </div>
         </section>
       </main>
