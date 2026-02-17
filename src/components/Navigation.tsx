@@ -16,15 +16,26 @@ export default function Navigation({ active }: NavigationProps) {
         </div>
 
         <nav className="nav" aria-label="Primary">
-          <Link className={active === "home" ? "nav-active" : ""} href="/">
+          <Link
+            href="/"
+            className={active === "home" ? "nav-active" : ""}
+          >
             Home
           </Link>
-          <Link className={active === "about" ? "nav-active" : ""} href="/about">
+
+          <Link
+            href="/about"
+            className={active === "about" ? "nav-active" : ""}
+          >
             About
           </Link>
-          <a className="nav-cta" href="#get-started">
+
+          <Link
+            href="/#get-started"
+            className="nav-cta"
+          >
             Get Started
-          </a>
+          </Link>
         </nav>
       </div>
     </header>
