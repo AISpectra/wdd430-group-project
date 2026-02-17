@@ -42,6 +42,14 @@ export default function Home() {
             ))}
           </div>
         </section>
+
+        <section className="section" id="about">
+          <h2>About</h2>
+          <p className="muted">
+            This app is built for WDD 430 and demonstrates a clean project setup,
+            reusable components, and a responsive layout using the App Router.
+          </p>
+        </section>
       </main>
 
       <footer className="site-footer">
